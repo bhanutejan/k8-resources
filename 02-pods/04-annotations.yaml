@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: annotations
+  labels:
+    course: DevOps
+    Trainee: "KBhanuTejaNamana"
+  annotations: 
+    com.roboshop.training.duration: "120Hours"
+    jenkins.url:  "https://jenkins.com/roboshop/catalogue#54" 
+spec:
+  # list of containers
+  containers:
+  - name: hello-pod
+    image: nginx
+    ports:
+    - containerPort:  80
